@@ -108,7 +108,7 @@ body {
 
 .middle-content-title {
   font-size: 1.25em;
-  color: #652e79;
+  color: #652e78;
   text-transform: uppercase;
 }
 .middle-content span[class^=icon]{
@@ -118,4 +118,24 @@ body {
 
 .middle-content p {
   color: #222222;
+}
+
+.main-content {
+  padding: 2em;
+}
+
+.main-content p {
+  line-height: 1.2;
+}
+
+.main-content-article {
+  margin-bottom: 3.5em;
+}
+
+.main-content-title {
+  font-size: 1.25em;
+  color: #652e78;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: normal;
 }
