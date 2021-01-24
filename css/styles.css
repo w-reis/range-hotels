@@ -3,3 +3,49 @@ body {
   color: #181818;
   line-height: 1.5;
 }
+
+.top-nav {
+  text-align: center;
+}
+
+.btn-menu {
+  font-size: 1.9em;
+  color: #612674;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: block;
+}
+
+#menu {
+  display: none;
+}
+
+.top-nav ul{
+  position: fixed;
+  top: 64px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform: translateX(-100%);
+  transition: all .5s ease;
+  background: #612674;
+  height: 100vh;
+  width: 100%;
+}
+
+.top-nav a{
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+  display: block;
+}
+.top-nav a:hover{
+  background: #7c3792;
+}
+
+#menu:checked ~ nav ul{
+  transform: translateX(0);
+}
