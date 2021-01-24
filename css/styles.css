@@ -4,6 +4,20 @@ body {
   line-height: 1.5;
 }
 
+.button {
+  display: inline-block;
+  padding: .75em 2.5em;
+  background: #58c4c4;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+.button:hover {
+  background: #37a0a0;
+}
+
 .top-header img {
   width: 200px;
   margin: .5em;
@@ -58,4 +72,21 @@ body {
 
 #menu:checked ~ nav ul{
   transform: translateX(0);
+}
+
+.top-content {
+  padding: 1em;
+  text-align: center;
+  background: #f6f6f6;
+}
+
+.top-content-title {
+  color: #612674;
+  font-size: 1.375em;
+  margin: 1.375em;
+}
+
+.top-content-subtitle {
+  color: #a87bb7;
+  font-size: 1em;
 }
