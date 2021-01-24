@@ -54,12 +54,11 @@ body {
 .top-nav ul{
   position: fixed;
   top: 73px;
-  left: 0;
+  left: -100%;
   margin: 0;
   padding: 0;
   list-style: none;
-  transform: translateX(-100%);
-  transition: all .5s ease;
+  transition: left .5s ease;
   background: #612674;
   height: 100vh;
   width: 100%;
@@ -80,7 +79,7 @@ body {
 }
 
 #menu:checked ~ nav ul{
-  transform: translateX(0);
+  left: 0;
 }
 
 .top-content {
@@ -168,4 +167,53 @@ body {
   text-decoration: none;
   color: #83969f;
   line-height: 2.875em;
+}
+
+@media screen and (min-width: 48.75em) {
+
+  .top-nav {
+    text-align: right;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .top-nav ul {
+    top: 0;
+    left: 0;
+    right: 0.5em;
+    transition: none;
+    background: transparent;
+    height: 73px;
+  }
+
+  .top-nav ul li {
+    display: inline-block;
+  }
+
+  .top-nav ul li:last-child {
+    margin-right: .5em;
+  }
+
+  .top-nav ul li a {
+    color: #521a66;
+    line-height: 73px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .top-nav ul li a:hover {
+    background: #e7d9fc;
+  }
+
+  .top-content {
+    background: #521a66;
+    color: #ffffff
+  }
+
+  .top-content-title,
+  .top-content-subtitle {
+    color: #ffffff;
+  }
 }
