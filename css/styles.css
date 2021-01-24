@@ -4,6 +4,12 @@ body {
   line-height: 1.5;
 }
 
+.top-header img {
+  width: 200px;
+  margin: .5em;
+  display: inline-block;
+}
+
 .top-nav {
   text-align: center;
 }
@@ -12,8 +18,8 @@ body {
   font-size: 1.9em;
   color: #612674;
   float: right;
-  line-height: 80px;
-  margin-right: 40px;
+  line-height: 73px;
+  margin-right: .5em;
   cursor: pointer;
   display: block;
 }
@@ -24,7 +30,7 @@ body {
 
 .top-nav ul{
   position: fixed;
-  top: 64px;
+  top: 73px;
   left: 0;
   margin: 0;
   padding: 0;
@@ -34,6 +40,10 @@ body {
   background: #612674;
   height: 100vh;
   width: 100%;
+}
+
+.top-nav ul li {
+  display: block;
 }
 
 .top-nav a{
